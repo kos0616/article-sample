@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_APP_URL
+const API = import.meta.env.VITE_API_URL
 
 export default async function getAllMessage() {
   const response = await fetch(API + '/api/chat')
