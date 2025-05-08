@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import newsSmall from './components/newsSmall.vue'
 import newsMid from './components/newsMid.vue'
 import newsGrid from './components/newsGrid.vue'
+import home from './views/home.vue'
 </script>
 
 <template>
@@ -17,7 +17,7 @@ import newsGrid from './components/newsGrid.vue'
       <newsSmall title="HOT BUSINESS NEWS" query="BUSINESS"></newsSmall>
       <newsSmall title="HOT SPORT NEWS" query="SPORT"></newsSmall>
     </div>
-    <RouterView />
+    <home></home>
     <div class="flex-1 flex-col gap-5 max-w-sm hidden lg:flex">
       <newsMid title="Guess you like" query="cycling"></newsMid>
       <newsGrid title="World Changes..." query="US"></newsGrid>
